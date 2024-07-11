@@ -1,4 +1,6 @@
+Spring 프로젝트에 Swagger를 통합하는 방법알아보겠습니다!!
 
+---
 ## SpringFox vs SpringDoc OpenAPI
 우선 Spring에 Swagger를 추가하려는데 방법이 2가지가 있었습니다. 바로 SpringFox와 SpringDoc OpenAPI입니다. 둘은 의존성을 추가하는 방식부터 설정 클래스를 구현하는 방법까지 달랐습니다!
 
@@ -81,7 +83,7 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("My API")
                         .version("1.0.0")
-                        .description("API documentation"));
+                        .description("API documentation for my application"));
     }
 }
 ```
@@ -174,7 +176,8 @@ public class TestController {
 
 - **SpringDoc OpenAPI Swagger UI**: `http://localhost:8080/swagger-ui.html`
 
+![](https://velog.velcdn.com/images/alswp006/post/4955f1f1-f253-42e6-9b6a-e603f1963669/image.png)
 
+![](https://velog.velcdn.com/images/alswp006/post/0f2fa15f-fc97-4745-babf-127eb2609e68/image.png)
 
-### 결론
-
+성공!!
